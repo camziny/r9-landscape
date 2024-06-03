@@ -1,8 +1,26 @@
-import { serial, text, timestamp, pgTable } from "drizzle-orm/pg-core";
+import { drizzle } from "drizzle-orm/vercel-postgres";
+import { sql } from "@vercel/postgres";
+import { pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
   id: serial("id"),
-  name: text("name"),
-  createdAt: timestamp("created_at"),
-  updatedAt: timestamp("updated_at"),
+  clerkUserId: text("clerk_user_id").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
+
+export const product = pgTable("product", {
+  id: serial("id"),
+  title: text("title").notNull(),
+  description: text("description").notNull(),
+  image: text("image").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export const schema = {
+  user,
+  product,
+};
+
+export const db = drizzle(sql, { schema });

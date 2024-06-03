@@ -11,6 +11,8 @@
     "migrate": "drizzle-kit migrate"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.8.0",
+    "dotenv": "^16.4.5",
     "drizzle-orm": "^0.31.0",
     "next": "14.2.3",
     "postgres": "^3.4.4",
