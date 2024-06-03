@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Route 9 Landscape Prodcuts",
-  description: "Home of all of your landscaping needs",
+  title: "Route 9 Landscape Products",
+  description:
+    "Route 9 Landscape Products offers a comprehensive selection of high-quality landscaping materials, including soil, gravel, sand, and decorative stones. Whether you're a professional landscaper or a DIY enthusiast, we have everything you need to create and maintain beautiful outdoor spaces.",
 };
 
 function TopNav() {
