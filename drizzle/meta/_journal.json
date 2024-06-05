@@ -8,6 +8,34 @@
       "when": 1717447413921,
       "tag": "0000_rare_lockheed",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1717596298355,
+      "tag": "0001_overrated_winter_soldier",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1717596453727,
+      "tag": "0002_omniscient_adam_warlock",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1717596511633,
+      "tag": "0003_blushing_mole_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1717597597636,
+      "tag": "0004_curly_malcolm_colcord",
+      "breakpoints": true
     }
   ]
 }

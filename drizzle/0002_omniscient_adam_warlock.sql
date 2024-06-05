@@ -1,0 +1,1 @@
+ALTER TABLE "product" ALTER COLUMN "user_id" SET DEFAULT 'default_user_id';
