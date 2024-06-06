@@ -10,11 +10,7 @@ const parallaxUrl =
 
 export default function HomePage() {
   return (
-    <div className="">
-      {/* Logo Section */}
-      {/* <div className="parallax parallax-1"></div> */}
-
-      {/* Logo and Heading Section */}
+    <div>
       <div className="flex flex-col items-center justify-center min-h-[50vh] bg-white py-12 px-4">
         <div className="relative w-full max-w-md mb-8">
           <Image
@@ -35,19 +31,16 @@ export default function HomePage() {
         <p className="text-md text-center text-gray-600 mt-4 max-w-2xl leading-relaxed">
           At Route 9 Landscape Products, we offer a wide range of high-quality
           materials to meet all your landscaping needs. Whether you're a
-          professional landscaper or a DIY enthusiast, you'll find everything
-          you need to create and maintain beautiful outdoor spaces. From premium
-          topsoil and nutrient-rich compost to decorative mulches and durable
-          hardscaping materials, our selection is designed to help you achieve
-          stunning results. Explore our product range today and discover why
-          we're the trusted choice for landscaping supplies in the Northeast.
+          professional landscaper or a DIY enthusiast, you&apos;ll find
+          everything you need to create and maintain beautiful outdoor spaces.
+          From premium topsoil and nutrient-rich compost to decorative mulches
+          and durable hardscaping materials, our selection is designed to help
+          you achieve stunning results. Explore our product range today and
+          discover why we&apos;re the trusted choice for landscaping supplies in
+          the Northeast.
         </p>
       </div>
-
-      {/* Parallax Section 2 */}
       <div className="parallax"></div>
-
-      {/* Product List Section */}
     </div>
   );
 }
