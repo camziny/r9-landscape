@@ -30,7 +30,7 @@ export default function HomePage() {
         </p>
         <p className="text-md text-center text-gray-600 mt-4 max-w-2xl leading-relaxed">
           At Route 9 Landscape Products, we offer a wide range of high-quality
-          materials to meet all your landscaping needs. Whether you're a
+          materials to meet all your landscaping needs. Whether you&apos;re a
           professional landscaper or a DIY enthusiast, you&apos;ll find
           everything you need to create and maintain beautiful outdoor spaces.
           From premium topsoil and nutrient-rich compost to decorative mulches
