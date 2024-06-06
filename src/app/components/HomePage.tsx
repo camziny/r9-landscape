@@ -5,8 +5,6 @@ export const dynamic = "force-dynamic";
 
 const logoUrl =
   "https://utfs.io/f/69cffd4e-1b68-4ae1-9d94-c9958da17ac9-fsrxvh.jpeg";
-const parallaxUrl =
-  "https://utfs.io/f/1fee7778-5bd8-421a-b1b1-493c05adfe3b-mhk8zl.jpg";
 
 export default function HomePage() {
   return (
@@ -22,13 +20,13 @@ export default function HomePage() {
             className="object-contain"
           />
         </div>
-        <h1 className="text-4xl font-bold text-center text-gray-900 mt-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mt-4">
           Route 9 Landscape Products
         </h1>
-        <p className="text-xl text-center text-gray-700 mt-2">
+        <p className="text-lg md:text-xl text-center text-gray-700 mt-2">
           Your One-Stop Shop for Quality Landscaping Products
         </p>
-        <p className="text-md text-center text-gray-600 mt-4 max-w-2xl leading-relaxed">
+        <p className="text-sm md:text-md text-center text-gray-600 mt-4 max-w-2xl leading-relaxed px-4">
           At Route 9 Landscape Products, we offer a wide range of high-quality
           materials to meet all your landscaping needs. Whether you&apos;re a
           professional landscaper or a DIY enthusiast, you&apos;ll find
@@ -41,6 +39,9 @@ export default function HomePage() {
         </p>
       </div>
       <div className="parallax"></div>
+      <div className="relative bg-white p-8">
+        <ProductList />
+      </div>
     </div>
   );
 }
