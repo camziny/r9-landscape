@@ -25,3 +25,33 @@ body {
     text-wrap: balance;
   }
 }
+
+/* styles.css */
+.parallax {
+  /* The image used */
+  background-image: url("https://utfs.io/f/1fee7778-5bd8-421a-b1b1-493c05adfe3b-mhk8zl.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-1 {
+  background-image: url("https://utfs.io/f/68fd04ce-01e0-4857-9c64-c8d8d20f37b2-o4lmre.jpg");
+  min-height: 200px; /* Set height to be more like a banner */
+  background-size: contain; /* Ensure the image is contained within the banner */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+@media (max-width: 768px) {
+  .parallax,
+  .parallax-1 {
+    background-attachment: scroll;
+  }
+}

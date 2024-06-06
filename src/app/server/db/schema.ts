@@ -9,7 +9,7 @@ export const user = pgTable("user", {
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
 
-export const product = pgTable("product", {
+export const products = pgTable("product", {
   id: serial("id"),
   title: text("title").notNull(),
   description: text("description").notNull(),
@@ -21,7 +21,7 @@ export const product = pgTable("product", {
 
 export const schema = {
   user,
-  product,
+  products,
 };
 
 export const db = drizzle(sql, { schema });
