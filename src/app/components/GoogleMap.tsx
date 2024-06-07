@@ -4,10 +4,6 @@ import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
 export default function GoogleMapComponent() {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-  const containerStyle = {
-    width: "500px",
-    height: "500px",
-  };
 
   const center = {
     lat: 42.28479446705715,
@@ -34,11 +30,11 @@ export default function GoogleMapComponent() {
   }, []);
 
   return isLoaded ? (
-    <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200">
+    <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200 w-full max-w-lg mx-auto h-64 sm:h-72 md:h-96 lg:h-[500px]">
       <GoogleMap
-        mapContainerStyle={containerStyle}
+        mapContainerStyle={{ width: "100%", height: "100%" }}
         center={center}
-        zoom={9.5}
+        zoom={14}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
