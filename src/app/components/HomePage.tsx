@@ -19,7 +19,7 @@ export default function HomePage() {
             layout="responsive"
             width={400}
             height={200}
-            className="object-contain"
+            className="object-contain rounded-md"
           />
         </div>
         <p className="text-lg md:text-xl text-center text-gray-700 mt-2">

@@ -14,7 +14,7 @@ export default function About() {
             layout="responsive"
             width={400}
             height={200}
-            className="object-contain"
+            className="object-contain rounded-md"
           />
         </div>
         <div className="max-w-3xl w-full bg-white p-8 shadow-lg rounded-lg">
