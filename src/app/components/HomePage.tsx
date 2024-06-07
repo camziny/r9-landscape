@@ -1,5 +1,7 @@
 import Image from "next/image";
 import ProductList from "./ProductList";
+import { Footer } from "./Footer";
+import GoogleMapComponent from "./GoogleMap";
 
 export const dynamic = "force-dynamic";
 
@@ -8,7 +10,7 @@ const logoUrl =
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <div className="flex flex-col items-center justify-center min-h-[50vh] bg-white py-12 px-4">
         <div className="relative w-full max-w-md mb-8">
           <Image
@@ -39,9 +41,11 @@ export default function HomePage() {
         </p>
       </div>
       <div className="parallax"></div>
-      <div className="relative bg-white p-8">
-        <ProductList />
+      <ProductList />
+      <div className="flex justify-center p-4 flex-grow">
+        <GoogleMapComponent />
       </div>
+      <Footer />
     </div>
   );
 }
