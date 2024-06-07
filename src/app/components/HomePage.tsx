@@ -6,7 +6,7 @@ import GoogleMapComponent from "./GoogleMap";
 export const dynamic = "force-dynamic";
 
 const logoUrl =
-  "https://utfs.io/f/69cffd4e-1b68-4ae1-9d94-c9958da17ac9-fsrxvh.jpeg";
+  "https://utfs.io/f/509bc951-a539-40d6-9aa3-c50d07f72748-fsrxvh.png";
 
 export default function HomePage() {
   return (
@@ -22,9 +22,6 @@ export default function HomePage() {
             className="object-contain"
           />
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mt-4">
-          Route 9 Landscape Products
-        </h1>
         <p className="text-lg md:text-xl text-center text-gray-700 mt-2">
           Your One-Stop Shop for Quality Landscaping Products
         </p>

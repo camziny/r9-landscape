@@ -1,6 +1,20 @@
+import Image from "next/image";
 export default function About() {
+  const logoUrl =
+    "https://utfs.io/f/509bc951-a539-40d6-9aa3-c50d07f72748-fsrxvh.png";
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 py-12 px-4">
+    <div className="flex flex-col items-center justify-start min-h-screen bg-gray-50 py-12 px-4 lg:py-24">
+      <div className="relative w-full max-w-md mb-8">
+        <Image
+          src={logoUrl}
+          alt="Logo"
+          layout="responsive"
+          width={400}
+          height={200}
+          className="object-contain"
+        />
+      </div>
       <div className="max-w-3xl w-full bg-white p-8 shadow-lg rounded-lg">
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-6">
           About Route 9 Landscape Products
