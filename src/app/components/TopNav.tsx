@@ -16,25 +16,28 @@ export function TopNav() {
   return (
     <nav className="bg-gray-100 border-b p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-xl font-semibold">
-          <Link href="/" className="hover:text-gray-600">
-            <FaHome />
-          </Link>
-        </div>
-        <div className="hidden md:flex space-x-8">
-          <Link href="/about" className="hover:text-gray-600">
-            About
-          </Link>
-          <Link href="/products" className="hover:text-gray-600">
-            Products
-          </Link>
-          <Link href="/contact" className="hover:text-gray-600">
-            Contact
-          </Link>
+        <div className="flex items-center space-x-8">
+          <div className="text-xl font-semibold">
+            <Link href="/" className="hover:text-gray-600">
+              <FaHome />
+            </Link>
+          </div>
+          <div className="hidden md:flex space-x-8">
+            <Link href="/about" className="hover:text-gray-600">
+              About
+            </Link>
+            <Link href="/products" className="hover:text-gray-600">
+              Products
+            </Link>
+            <Link href="/contact" className="hover:text-gray-600">
+              Contact
+            </Link>
+          </div>
         </div>
         <div className="hidden md:flex space-x-4">
           <Link
             href="https://www.facebook.com/route9landscapeproducts/"
+            target="blank"
             className="hover:text-gray-600"
             aria-label="Facebook"
           >
@@ -42,6 +45,7 @@ export function TopNav() {
           </Link>
           <Link
             href="https://www.instagram.com/route9landscapeproducts/"
+            target="blank"
             className="hover:text-gray-600"
             aria-label="Instagram"
           >
@@ -49,6 +53,7 @@ export function TopNav() {
           </Link>
           <Link
             href="https://www.linkedin.com/company/rosado-landscape-supplies/"
+            target="blank"
             className="hover:text-gray-600"
             aria-label="LinkedIn"
           >
@@ -66,6 +71,7 @@ export function TopNav() {
           <div className="flex flex-col items-center space-y-4">
             <Link
               href="/"
+              target="blank"
               className="hover:text-gray-600"
               onClick={() => setIsOpen(false)}
             >
@@ -73,6 +79,7 @@ export function TopNav() {
             </Link>
             <Link
               href="/about"
+              target="blank"
               className="hover:text-gray-600"
               onClick={() => setIsOpen(false)}
             >
@@ -80,6 +87,7 @@ export function TopNav() {
             </Link>
             <Link
               href="/products"
+              target="blank"
               className="hover:text-gray-600"
               onClick={() => setIsOpen(false)}
             >
@@ -87,6 +95,7 @@ export function TopNav() {
             </Link>
             <Link
               href="/contact"
+              target="blank"
               className="hover:text-gray-600"
               onClick={() => setIsOpen(false)}
             >
@@ -103,6 +112,7 @@ export function TopNav() {
               </Link>
               <Link
                 href="https://www.instagram.com/route9landscapeproducts/"
+                target="blank"
                 className="hover:text-gray-600"
                 aria-label="Instagram"
                 onClick={() => setIsOpen(false)}
@@ -111,6 +121,7 @@ export function TopNav() {
               </Link>
               <Link
                 href="https://www.linkedin.com/company/rosado-landscape-supplies/"
+                target="blank"
                 className="hover:text-gray-600"
                 aria-label="LinkedIn"
                 onClick={() => setIsOpen(false)}
